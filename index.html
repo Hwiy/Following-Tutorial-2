@@ -1,0 +1,32 @@
+<style>
+  :root {
+    --bg-color: #fff09b;
+    --border-color: #003459;
+    --sphere-color: #f77778;
+    --sphere-color2: #faa7a8;
+    --sphere-highlight: rgba(255, 255, 255, 0.5)
+  }
+
+  body {
+    background-color: var(--bg-color);
+  }
+
+  .sphere {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: calc(50vw - 100px);
+    border-radius: 50%;
+    background-color: var(--sphere-color);
+  }
+
+  .sphere::before {
+    content: "";
+  }
+
+  .sphere::after {
+    content: "";
+  }
+</style>
+
+<div class="sphere"></div>
